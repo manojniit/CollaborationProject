@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="css/login.css" />
+<script src="js/validations.js"></script>
+
+	  
+    <form name="loginForm">
+          
+      <center><h3 style="font-size: 40px">Please login</h3><br></center>
+Username:<input type="text"  name="username"     ng-model="username" required/><br>
+<span ng-show="loginForm.username.$touched && loginForm.username.$invalid">The username is required.</span>
+Password:<input type="password"  name="password"  ng-model="password" required/><br> 
+<span ng-show="loginForm.password.$touched && loginForm.password.$invalid">The password is required.</span>
+      <button class="submit" ng-click="login()" onsubmit="return validateForm()">Login</button>   
+    </form>
+  </div>
+</div>
