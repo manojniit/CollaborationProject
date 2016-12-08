@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app="GetzChat" ng-init="likes=0;allBlogs=false;id='data';blogs=false;users=false;adminJobs=false;
+adminBlogs=false;jobs=false;login=true;register=true;about=true;services=true;home=true;logout=false;chat=false;
+uname='data'">
+
+<head>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+
+  <!-- SPELLS -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/home.js"></script>
+	<style>
+body {
+    background-image:url("http://previews.123rf.com/images/sellingpix/sellingpix1001/sellingpix100100241/6316673-Conference-chat-3d-isolated-characters-series--Stock-Photo-cartoon-people-meeting.jpg");
+	background-repeat: no-repeat;
+     background-attachment: fixed;
+}
+</style>
+ </head>
+ <body>
+  <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+  <!-- Navbar content -->
+<!-- </nav>
+<nav class="navbar navbar-primary> -->
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Getz Chat</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#login" ng-show="login"><i class="fa fa-shield"></i> Login</a></li>
+        <li><a href="#register" ng-show="register"><i class="fa fa-comment"></i>Register</a></li>
+        <li><a href="#blogs" ng-show="blogs"><i class="fa fa-comment"></i>UserBlogs</a></li>
+        <li><a href="#jobs" ng-show="jobs"><i class="fa fa-comment"></i>jobs</a></li>
+        <li><a href="#forum" ng-show="forum"><i class="fa fa-comment"></i>Add Forum</a></li>
+         <li><a href="#logout" ng-show="logout"><i class="fa fa-comment"></i>logout</a></li>
+      <!--    <li><a href="#blogs" ng-show="blogs"><i class="fa fa-shield"></i>MyBlogs</a></li> -->
+		<li><a href="#allBlogs" ng-show="allBlogs"><i class="fa fa-shield"></i>AllBlogs</a></li>
+         <!-- <li><a href="#adminJobs" ng-show="adminJobs"><i class="fa fa-comment"></i>Jobs</a></li> -->
+          <li><a href="#adminBlogs" ng-show="adminBlogs"><i class="fa fa-comment"></i>Blogs</a></li>
+         
+      </ul>
+    </div>
+  </nav>
+  
+<div ng-view></div>
+</body>
+</html>
+
